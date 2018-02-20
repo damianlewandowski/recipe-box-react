@@ -1,4 +1,5 @@
 import React from 'react'
+import propTypes from 'prop-types'
 
 import RecipeItem from '../RecipeItem/RecipeItem'
 
@@ -18,6 +19,12 @@ const Recipes = (props) => {
       {recipesItems}
     </ul>
   )
+}
+
+Recipes.propTypes = {
+  loadRecipeToEditIntoModal: propTypes.func,
+  deleteRecipe: propTypes.func,
+  recipes: propTypes.array
 }
 
 export default Recipes

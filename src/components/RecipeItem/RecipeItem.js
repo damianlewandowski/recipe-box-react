@@ -79,6 +79,8 @@ class RecipeItem extends Component {
 
 RecipeItem.propTypes = {
   recipe: propTypes.object,
+  loadRecipeToEditIntoModal: propTypes.func,
+  deleteRecipe: propTypes.func,
 }
 
 export default RecipeItem;

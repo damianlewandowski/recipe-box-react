@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types'
 
 import './Buttons.css';
 
@@ -12,5 +13,10 @@ const Buttons = (props) => (
       onClick={props.deleteRecipe.bind(null, props.recipe.id)}>Delete</button>
   </div>
 );
+
+Buttons.propTypes = {
+  loadRecipeToEditIntoModal: propTypes.func,
+  deleteRecipe: propTypes.func,
+}
 
 export default Buttons;

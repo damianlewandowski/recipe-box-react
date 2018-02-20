@@ -25,12 +25,13 @@
   flex-direction: column;
   align-items: flex-end;
   width: 100%;
+  min-height: 100%;
 }
 
 .exit-modal-btn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 5px;
 
   font-family: fantasy;
   font-size: 2rem;
@@ -55,7 +56,7 @@
 }
 
 .form-control:first-of-type {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .form-control:not(:last-of-type) {
@@ -85,7 +86,7 @@
 }
 
 .RecipeModal-add-btn {
-  margin: 15px 0;  
+  margin: 30px 20px;
   width: 4rem;
   height: 4rem;
   font-size: 2.5rem;
@@ -105,7 +106,7 @@
   width: 100%;
   font-size: 2rem;
   cursor: pointer;
-  
+  margin-top: auto;
 }
 
 .RecipeModal-submit-btn:hover {

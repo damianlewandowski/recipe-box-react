@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import propTypes from 'prop-types'
 
 import IngredientInput from './IngredientInput';
 
@@ -44,6 +45,11 @@ class RecipeModal extends Component {
   handleFormSubmit(e) {
     e.preventDefault()
 
+    if(!this.state.recipeName) {
+      alert("Your recipe doesn't have any name!")
+      return
+    }
+
     if(this.props.editMode) {
       let recipe = JSON.parse(JSON.stringify(this.props.recipe))
       recipe.ingredients = this.state.ingredients.slice()  
@@ -74,7 +80,7 @@ class RecipeModal extends Component {
         <div onClick={this.props.closeModal} className="backdrop"></div>
 
         <div className="RecipeModal-form-container">
-          <button onClick={this.props.closeModal} className="exit-modal-btn">x</button>
+          <button onClick={this.props.closeModal} className="exit-modal-btn">&#10006;</button>
           <form className="RecipeModal-form" onSubmit={this.handleFormSubmit}> 
             <div className="form-control RecipeModal-recipe-name">
               <label htmlFor="recipe-name">Recipe Name</label>
@@ -88,7 +94,7 @@ class RecipeModal extends Component {
 
             {ingredients}
 
-            <button onClick={this.addNewIngredientInput} type="button" className="RecipeModal-add-btn">+</button>          
+            <button onClick={this.addNewIngredientInput} type="button" className="RecipeModal-add-btn">+</button>     
             <input className="RecipeModal-submit-btn" type="submit" value="Submit"/>
           </form>
         </div>
@@ -97,6 +103,16 @@ class RecipeModal extends Component {
       </div>      
     );
   }
+}
+
+RecipeModal.propTypes = {
+  recipe:         propTypes.object,
+  closeModal:     propTypes.func,
+  toggleEditMode: propTypes.func,
+  addRecipe:      propTypes.func,
+  editRecipe:     propTypes.func,
+  editMode:       propTypes.bool,
+  increment:      propTypes.func,
 }
 
 export default RecipeModal;

@@ -31,6 +31,39 @@ const DEFAULT_RECIPES = [
       "100g cottage cheese",
     ]
   },
+  {
+    "id": 2,    
+    "recipeName": "Roasted Chicken",
+    "ingredients": [
+      "50g sugar",
+      "1 chicken",
+      "stuff",
+      "100ml water",
+      "100g cheesee",
+    ]
+  },
+  {
+    "id": 3,    
+    "recipeName": "Definitely Not Cheesecake",
+    "ingredients": [
+      "50g sugar",
+      "50ml milk",
+      "50g flour",
+      "100ml water",
+      "100g mud",
+    ]
+  },
+  {
+    "id": 4,    
+    "recipeName": "Cheeseburger",
+    "ingredients": [
+      "bum",
+      "meat",
+      "cheese",
+      "onion",
+      "ketchup",
+    ]
+  },
 ]
 
 
