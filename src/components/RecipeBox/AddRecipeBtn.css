@@ -1,0 +1,17 @@
+.AddRecipeBtn {
+  margin-top: 15px;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(#1E90FF, #0072E2);
+  border: 1px solid #0363C2;
+  border-radius: 6px;
+  color: white;
+  padding: 16px 12px;
+  text-shadow: 1px 0 #2f2f2f, -1px 0 #2f2f2f, 0 1px #2f2f2f, 0 -1px #2f2f2f;
+  cursor: pointer;
+}
+
+.AddRecipeBtn:hover {
+  background: #0363C2;
+}

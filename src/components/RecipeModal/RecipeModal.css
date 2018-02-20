@@ -1,0 +1,113 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+}
+
+.RecipeModal-form-container {
+  position: fixed;
+  top: 10%;
+  bottom: 10%;
+  left: 50%;
+  padding: 10px;
+  max-height: 90vh;
+  overflow-y: scroll;
+  transform: translateX(-50%);  
+  width: 95%;
+  background: #fff;
+}
+
+.RecipeModal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.exit-modal-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  font-family: fantasy;
+  font-size: 2rem;
+  color: #9f9f9f;
+  background: none;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.exit-modal-btn:hover {
+  color: #2f2f2f;
+}
+
+.RecipeModal-recipe-name {
+  margin-bottom: 25px;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-control:first-of-type {
+  margin-top: 30px;
+}
+
+.form-control:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.form-control label {
+  font-size: 1.5rem;
+  color: #1f1f1f;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-control input {
+  width: 100%;
+  font-size: 1.7rem;
+  padding: 16px 8px;
+  color: #0f0f0f;
+  border: 1px solid #2f2f2f;
+  border-radius: 6px;
+}
+
+
+.form-control input:focus {
+  border: 1px solid #0071DF;  
+  box-shadow: 1px 0 #1E90FF, 0 1px #1E90FF, -1px 0 #1E90FF, 0 -1px #1E90FF;
+}
+
+.RecipeModal-add-btn {
+  margin: 15px 0;  
+  width: 4rem;
+  height: 4rem;
+  font-size: 2.5rem;
+  color: #fff;
+  border: 1px solid #2f2f2f;
+  border-radius: 50%;
+  background: linear-gradient(#0071DF, #0361BC);
+  cursor: pointer;
+}
+
+.RecipeModal-submit-btn {
+  padding: 8px 0;
+  color: #fff;
+  background: linear-gradient(#79C779, #3B9E3B);
+  border: 1px solid #3B9E3B;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 2rem;
+  cursor: pointer;
+  
+}
+
+.RecipeModal-submit-btn:hover {
+  background: #3B9E3B;
+}

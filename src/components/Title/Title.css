@@ -1,0 +1,11 @@
+.Title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: linear-gradient(#00BFFF, #00A6DE);
+  padding: 12px;
+  box-shadow: 1px 0 10px #058FBE;
+  border-bottom: 1px solid #058FBE;
+}
